@@ -1,0 +1,26 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.hero-card {
+    padding: 2rem;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+.hero-image img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-right: 7rem;
+}
+

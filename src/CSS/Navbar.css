@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 0 2rem;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.8rem;
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar img {
+  height: 5rem;
+  width: auto;
+}
+
+.nav-logo-svg {
+  height: 3.5rem;
+  width: auto;
+}
+
+.logo-path {
+  stroke: #333;
+  stroke-width: 2;
+  fill: #333;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
