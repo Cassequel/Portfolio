@@ -47,14 +47,14 @@ function Projects() {
 
     return (
         <div id='projects'>
-            <div className="div1" ref={(el) => (gridItemsRef.current[0] = el)}><img src="public/images/grid/arik.JPG" alt="" /></div>
-            <div className="div2" ref={(el) => (gridItemsRef.current[1] = el)}><img src="public/images/grid/rock.JPG" alt="" /></div>
-            <div className="div3" ref={(el) => (gridItemsRef.current[2] = el)}><img src="public/images/grid/repel.JPG" alt="" /></div>
-            <div className="div4" ref={(el) => (gridItemsRef.current[3] = el)}><img src="public/images/grid/fade.JPG" alt="" /></div>
-            <div className="div5" ref={(el) => (gridItemsRef.current[4] = el)}><img src="public/images/grid/look.JPG" alt="" /></div>
-            <div className="div6" ref={(el) => (gridItemsRef.current[5] = el)}><img src="public/images/grid/brekky.JPG" alt="" /></div>
-            <div className="div7" ref={(el) => (gridItemsRef.current[6] = el)}><img src="public/images/grid/swing.JPG" alt="" /></div>
-            <div className="div8" ref={(el) => (gridItemsRef.current[7] = el)}><img src="public/images/grid/view.JPG" alt="" /></div>
+            <div className="div1" ref={(el) => (gridItemsRef.current[0] = el)}><img src="/images/grid/arik.JPG" alt="" /></div>
+            <div className="div2" ref={(el) => (gridItemsRef.current[1] = el)}><img src="/images/grid/rock.JPG" alt="" /></div>
+            <div className="div3" ref={(el) => (gridItemsRef.current[2] = el)}><img src="/images/grid/repel.JPG" alt="" /></div>
+            <div className="div4" ref={(el) => (gridItemsRef.current[3] = el)}><img src="/images/grid/fade.JPG" alt="" /></div>
+            <div className="div5" ref={(el) => (gridItemsRef.current[4] = el)}><img src="/images/grid/look.JPG" alt="" /></div>
+            <div className="div6" ref={(el) => (gridItemsRef.current[5] = el)}><img src="/images/grid/brekky.JPG" alt="" /></div>
+            <div className="div7" ref={(el) => (gridItemsRef.current[6] = el)}><img src="/images/grid/swing.JPG" alt="" /></div>
+            <div className="div8" ref={(el) => (gridItemsRef.current[7] = el)}><img src="/images/grid/view.JPG" alt="" /></div>
         </div>
     );
 }
