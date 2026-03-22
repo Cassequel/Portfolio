@@ -1,0 +1,80 @@
+#skills {
+    padding: var(--section-pad);
+    background-color: var(--color-bg);
+    scroll-margin-top: 80px;
+}
+
+.skills-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Group card */
+.skill-group {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.skill-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.1rem;
+}
+
+.skill-group-icon {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    color: var(--color-accent-blue);
+    min-width: 1.4rem;
+}
+
+.skill-group-title {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+/* Pills */
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-pill {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: 100px;
+    padding: 4px 12px;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    cursor: default;
+}
+
+.skill-pill:hover {
+    color: var(--color-text);
+    border-color: var(--color-accent-blue);
+    background: rgba(59, 130, 246, 0.08);
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,47 +1,92 @@
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem 0 2rem;
-  font-family: 'Crimson Text', serif;
-  font-size: 1.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 64px;
+    background-color: rgba(10, 14, 26, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
 }
 
-.nav-left,
-.nav-right {
-  flex: 1;
+/* Logo */
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-bg);
+    background-clip: text;
+    letter-spacing: -0.02em;
 }
 
-.nav-right {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
+/* Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
 }
 
-
-a {
-  text-decoration: none;
-  color: black;
+.nav-links a {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.2s;
+    letter-spacing: 0.02em;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-links a:hover {
+    color: var(--color-text);
 }
 
-.navbar img {
-  height: 5rem;
-  width: auto;
+/* Hamburger — hidden on desktop */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
 }
 
-.nav-logo-svg {
-  height: 3.5rem;
-  width: auto;
+.nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-text-muted);
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
 }
 
-.logo-path {
-  stroke: #333;
-  stroke-width: 2;
-  fill: #333;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.nav-hamburger--open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger--open span:nth-child(2) { opacity: 0; }
+.nav-hamburger--open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav-hamburger { display: flex; }
+
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+        padding: 1.5rem 2rem;
+        gap: 1.5rem;
+        display: none;
+    }
+
+    .nav-links--open {
+        display: flex;
+    }
 }

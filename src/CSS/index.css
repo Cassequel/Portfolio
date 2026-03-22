@@ -1,11 +1,76 @@
-* {
+/* === RESET === */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* === DESIGN TOKENS === */
+:root {
+    /* Colors */
+    --color-bg:            white;
+    --color-surface:       #2e2e2e;
+    --color-surface-2:     white;
+    --color-border:        #1e2d47;
+    --color-accent-blue:   #3b82f6;
+    --color-accent-purple: #8b5cf6;
+    --color-accent-teal:   #06b6d4;
+    --color-text:          black;
+    --color-text-muted:    black;
+    --color-text-dim:      black;
+    --color-green:         #10b981;
+
+    /* Gradients */
+    --gradient-accent: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-purple));
+    --gradient-card:   linear-gradient(135deg, var(--color-surface), var(--color-surface-2));
+
+    /* Typography */
+    --font-sans:    'Inter', system-ui, sans-serif;
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+    /* Layout */
+    --section-pad: 5rem 2rem;
+    --max-width: 1200px;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+/* === BASE === */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === SHARED SECTION UTILITIES === */
+.section-label {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-bg);
+    margin-bottom: 1rem;
 }

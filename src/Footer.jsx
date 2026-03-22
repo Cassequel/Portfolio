@@ -1,29 +1,43 @@
 import './CSS/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
-        <div id="footer">
-            <div id="top-nav">
-                <ul>
-                    <li>Socials</li>
-                    <li id="message-nav">Send A Message</li>
-                </ul>
+        <footer id="footer">
+            <div className="footer-inner">
+                <p className="footer-brand">AS</p>
+
+                <div className="footer-links">
+                    <a
+                        href="https://github.com/Cassequel"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-icon-link"
+                        aria-label="GitHub"
+                    >
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/aiden-swanson"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-icon-link"
+                        aria-label="LinkedIn"
+                    >
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a
+                        href="mailto:aidenpswanson@gmail.com"
+                        className="footer-email-link"
+                    >
+                        aidenpswanson@gmail.com
+                    </a>
+                </div>
+
+                <p className="footer-copy">&copy; 2026 Aiden Swanson</p>
             </div>
-            <div id="footer-nav">
-                <ul>
-                    <a href="#"><li><FontAwesomeIcon icon={faInstagram} /></li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faLinkedin} /></li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faYoutube} /></li></a>
-                    <a href="#"><li><FontAwesomeIcon icon={faGithub} /></li></a>
-                    <a href="#" id="footer-nav-right"><li>aidenpswanson@gmail.com</li></a>
-                </ul>
-            </div>
-            <div id="copyright">
-                <p>© 2024 Aiden Swanson. All rights reserved.</p>
-            </div>
-        </div>
+        </footer>
     );
 }
 

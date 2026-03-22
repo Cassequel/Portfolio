@@ -1,58 +1,64 @@
 #footer {
-    background-color: #0f0f0f;
-    height: 80vh;
-    font-family: "Crimson Text", serif;
-    color: #f6f4f0;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: 2.5rem 2rem;
 }
 
-#copyright {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#footer-nav {
-    width: 100%;
-    padding: 1rem 2rem;
-}
-
-#footer-nav ul {
-    list-style: none;
+.footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-#top-nav ul {
-    list-style: none;
+.footer-brand {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-links {
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    justify-content: space-around;
-    gap: 20rem;
-    font-family: "raleway", sans-serif;
-    padding-top: 10px;
-    margin-bottom: -20px;
+    gap: 1.25rem;
 }
 
-#footer-nav ul a {
-    text-decoration: none;
-    color: #f6f4f0;
-    font-size: 4rem;
+.footer-icon-link {
+    font-size: 1.4rem;
+    color: var(--color-bg);
+    transition: color 0.2s;
 }
 
-#footer-nav ul a:not(:last-child) {
-    margin-right: 1.5rem;
+.footer-icon-link:hover {
+    color: var(--color-accent-blue);
 }
 
-#footer-nav ul a#footer-nav-right {
-    margin-left: auto;
-    font-size: 1rem;
+.footer-email-link {
+    font-size: 0.875rem;
+    color: var(--color-bg);
+    transition: color 0.2s;
+}
+
+.footer-email-link:hover {
+    color: var(--color-accent-blue);
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: var(--color-bg);
+}
+
+@media (max-width: 600px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
