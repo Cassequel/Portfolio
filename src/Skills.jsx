@@ -4,22 +4,22 @@ const SKILL_GROUPS = [
     {
         category: 'Languages',
         icon: '{ }',
-        skills: ['Python', 'SQL', 'R', 'JavaScript', 'Bash'],
+        skills: ['Python', 'SQL', 'JavaScript', 'Bash'],
     },
     {
         category: 'ML / DL Frameworks',
         icon: '⚡',
-        skills: ['PyTorch', 'TensorFlow', 'scikit-learn', 'HuggingFace', 'XGBoost', 'LightGBM', 'Keras'],
+        skills: ['PyTorch', 'TensorFlow', 'scikit-learn', 'XGBoost', 'LightGBM'],
     },
     {
         category: 'Data Tools',
         icon: '◈',
-        skills: ['Pandas', 'NumPy', 'Spark', 'Airflow', 'dbt', 'Pinecone', 'PostgreSQL', 'Redis'],
+        skills: ['Pandas', 'NumPy', 'PostgreSQL'],
     },
     {
         category: 'Cloud / Platforms',
         icon: '☁',
-        skills: ['AWS', 'Cloudflare', 'Docker', 'Kubernetes', 'Git', 'MLflow', 'Weights & Biases'],
+        skills: ['AWS', 'Cloudflare', 'Docker', 'Kubernetes', 'Git'],
     },
 ];
 
