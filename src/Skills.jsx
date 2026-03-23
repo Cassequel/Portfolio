@@ -4,7 +4,7 @@ const SKILL_GROUPS = [
     {
         category: 'Languages',
         icon: '{ }',
-        skills: ['Python', 'SQL', 'JavaScript', 'Bash'],
+        skills: ['Python', 'SQL', 'JavaScript', 'C#', 'Bash'],
     },
     {
         category: 'ML / DL Frameworks',
@@ -14,12 +14,12 @@ const SKILL_GROUPS = [
     {
         category: 'Data Tools',
         icon: '◈',
-        skills: ['Pandas', 'NumPy', 'PostgreSQL'],
+        skills: ['Pandas', 'NumPy', 'Jupyter Notebooks', 'PostgreSQL', 'Tableau', 'Power BI'],
     },
     {
         category: 'Cloud / Platforms',
         icon: '☁',
-        skills: ['AWS', 'Cloudflare', 'Docker', 'Kubernetes', 'Git'],
+        skills: ['AWS', 'Cloudflare', 'Docker', 'Kubernetes', 'Git', 'Virtual Machines'],
     },
 ];
 
