@@ -28,7 +28,7 @@ function Skills() {
         <section id="skills">
             <div className="skills-inner">
                 <p className="section-label">// toolkit</p>
-                <h2 className="section-title">Skills</h2>
+                <h2 className="section-title-black">Skills</h2>
 
                 <div className="skills-grid">
                     {SKILL_GROUPS.map(group => (
