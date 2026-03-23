@@ -14,7 +14,7 @@ function About() {
                     <p>For this 2026 Summer I'm actively looking for a new opportunity to gain experience in the field of machine learning and data engineering.    
                     </p>
                 </div>
-                <img src="/images/image.jpg" alt="Profile Image" />
+                <img src="/images/headshot.JPG" alt="Profile Image" />
             </div>
         </section>
     );

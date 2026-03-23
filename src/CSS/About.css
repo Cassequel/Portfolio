@@ -22,7 +22,7 @@
 }
 
 #about img {
-    width: 300px;
+    width: 220px;
     height: 300px;
     object-fit: cover;
     border-radius: var(--radius-md);

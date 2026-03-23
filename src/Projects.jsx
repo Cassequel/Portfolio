@@ -7,7 +7,7 @@ import './CSS/Projects.css';
 const PROJECTS = [
     {
         title: 'March Madness Bracket Predictor',
-        description: 'Predictive model for forecasting NCAA tournament outcomes using historical data and team statistics.',
+        description: 'Predictive model for forecasting NCAA tournament outcomes using historical data and team statistics. Accuracy of 70%',
         image: '/images/march.jpeg',
         tags: ['Python', 'scikit-learn', 'Random Forest', 'Pandas'],
         github: 'https://github.com/Cassequel/brackets',
@@ -31,7 +31,7 @@ const PROJECTS = [
     },
     {
         title: 'AI SOC-2 Compliance Tool | Hackathon Winner',
-        description: 'Co-built an AI-powered SOC-2 compliance assistant that assists in evidence collection, identifies control gaps, and generates audit reports. Built with Python-Django, TypeScript, and a React dashboard.',
+        description: 'Co-built an AI-powered SOC-2 compliance assistant that assists in evidence collection, identifies control gaps, and generates audit reports. Built with Python, TypeScript, and a React dashboard. 24-HR Hackathon',
         image: '/images/soc2.png',
         tags: ['Python-Django', 'React', 'TypeScript'],
         github: 'https://github.com/mspulsi/SOC2Tracker',
