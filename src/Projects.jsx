@@ -6,6 +6,14 @@ import './CSS/Projects.css';
 
 const PROJECTS = [
     {
+        title: 'Shop Orders Risk-Score Predictor',
+        description: 'Predictive Linear Regression model for creating risk-scores to determine chance of fraud for online shopping orders.',
+        image: './images/Shop_Pipeline.png',
+        tags: ['Python', 'scikit-learn', 'Linear Regression', 'Pandas'],
+        github: 'https://github.com/lincolnadams5/ShopPracticePipeline',
+        demo: null,
+    },
+    {
         title: 'March Madness Bracket Predictor',
         description: 'Predictive model for forecasting NCAA tournament outcomes using historical data and team statistics. Accuracy of 70%',
         image: '/images/march.jpeg',
