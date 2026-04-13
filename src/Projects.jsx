@@ -6,7 +6,7 @@ import './CSS/Projects.css';
 
 const PROJECTS = [
     {
-        title: 'Adversarial-Robust Network Traffic Classifier',
+        title: 'Lincoln Laboratory VNAT Network Traffic Classifier',
         description: 'Built an end-to-end ML pipeline to classify encrypted VPN traffic using MIT Lincoln Laboratory\'s VNAT dataset — no payload inspection, metadata only. Trained LightGBM/Random Forest/LR across two tasks (5-class traffic category F1: 0.865, VPN detection F1: 1.000), and implemented physically-constrained adversarial evasion attacks to stress-test and harden the classifier.',
         images: ['./images/vnat-front.png', './images/vnat-data.png'],
         tags: ['Python', 'LightGBM', 'scikit-learn', 'SHAP', 'PyWavelets', 'Adversarial ML', 'Streamlit'],
