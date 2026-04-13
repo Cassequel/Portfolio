@@ -15,7 +15,7 @@ const PROJECTS = [
     },
     {
         title: 'Pag-asa Portal — Nonprofit ML Pipelines',
-        description: 'Built and deployed four end-to-end machine learning pipelines for a nonprofit platform serving trafficking and abuse survivors in the Philippines. ',
+        description: 'Built and deployed four end-to-end machine learning pipelines for a nonprofit platform serving trafficking and abuse survivors in the Philippines. Pipelines include donor churn classification, resident reintegration readiness classification, a social media causal/explanatory model, and a safehouse operational outcomes panel regression with fixed effects.',
         images: ['./images/pagasa-landing.png', './images/pagasa-overview.png', './images/pagasa-ml.png'],
         tags: ['Python', 'scikit-learn', 'Pandas', 'OLS Regression', 'Random Forest', 'FastAPI', 'Render'],
         github: 'https://github.com/lincolnadams5/intex-w26',
@@ -23,7 +23,7 @@ const PROJECTS = [
     },  
     {
         title: 'Shop Orders Risk-Score Predictor',
-        description: 'Predictive Linear Regression model for creating risk-scores to determine chance of fraud for online shopping orders.',
+        description: 'Predictive Linear Regression model for creating risk-scores to determine chance of fraud for online shopping orders. ',
         images: ['./images/Shop_Pipeline.png'],
         tags: ['Python', 'scikit-learn', 'Linear Regression', 'Pandas', 'Vercel'],
         github: 'https://github.com/lincolnadams5/ShopPracticePipeline',
