@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import './CSS/Projects.css';
 
 const PROJECTS = [
@@ -12,6 +13,7 @@ const PROJECTS = [
         tags: ['Python', 'LightGBM', 'scikit-learn', 'SHAP', 'PyWavelets', 'Adversarial ML', 'Streamlit'],
         github: 'https://github.com/Cassequel/Lincoln-Lab-VNAT-Classification',
         demo: null,
+        website: 'https://rpsnsztwgfexzyy8y5utng.streamlit.app/#category-confidence-scores',
     },
     {
         title: 'Pag-asa Portal — Nonprofit ML Pipelines',
@@ -20,6 +22,7 @@ const PROJECTS = [
         tags: ['Python', 'scikit-learn', 'Pandas', 'OLS Regression', 'Random Forest', 'FastAPI', 'Render'],
         github: 'https://github.com/lincolnadams5/intex-w26',
         demo: null,
+        website: null,
     },  
     {
         title: 'Shop Orders Risk-Score Predictor',
@@ -28,6 +31,7 @@ const PROJECTS = [
         tags: ['Python', 'scikit-learn', 'Linear Regression', 'Pandas', 'Vercel'],
         github: 'https://github.com/lincolnadams5/ShopPracticePipeline',
         demo: null,
+        website: null,
     },
     {
         title: 'March Madness Bracket Predictor',
@@ -36,6 +40,7 @@ const PROJECTS = [
         tags: ['Python', 'scikit-learn', 'Random Forest', 'Pandas'],
         github: 'https://github.com/Cassequel/brackets',
         demo: null,
+        website: null,
     },
     {
         title: 'Ella-Rises Public Website & Admin Dashboard',
@@ -44,6 +49,7 @@ const PROJECTS = [
         tags: ['Node.js', 'Express', 'EC2', 'AWS'],
         github: 'https://github.com/Cassequel/Ella-Rises-Non-Profit-Full-Stack-App-',
         demo: null,
+        website: null,
     },
     {
         title: 'AI SOC-2 Compliance Tool | Hackathon Winner',
@@ -52,6 +58,7 @@ const PROJECTS = [
         tags: ['Python-Django', 'React', 'TypeScript'],
         github: 'https://github.com/mspulsi/SOC2Tracker',
         demo: null,
+        website: null,
     },
     {
         title: 'Silent Disco Streaming Application',
@@ -60,6 +67,7 @@ const PROJECTS = [
         tags: ['Linux', 'Icecast', 'Liquidsoap'],
         github: 'https://github.com/Cassequel/Silent-Disco',
         demo: null,
+        website: null,
     },
 
     {
@@ -69,6 +77,7 @@ const PROJECTS = [
         tags: ['Python', 'Industry APIs', 'Raspberry Pi', 'SpeechRecognition'],
         github: '',
         demo: null,
+        website: null,
     },
     {
         title: 'FUTURE: Outdoor Climbing Send Scoring Algorithm',
@@ -77,6 +86,7 @@ const PROJECTS = [
         tags: ['Python', 'scikit-learn', 'Pandas'],
         github: null,
         demo: null,
+        website: null,
     },
 ];
 
@@ -190,6 +200,16 @@ function Projects() {
                                         className="project-link"
                                     >
                                         <FontAwesomeIcon icon={faGithub} /> GitHub
+                                    </a>
+                                )}
+                                {project.website && (
+                                    <a
+                                        href={project.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-link"
+                                    >
+                                        <FontAwesomeIcon icon={faGlobe} /> Website
                                     </a>
                                 )}
                                 {project.demo && (
