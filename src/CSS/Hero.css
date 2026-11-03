@@ -57,6 +57,27 @@
 }
 
 /* Buttons */
+.hero-profile-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .75rem 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.hero-profile-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    min-height: 36px;
+    font-size: .85rem;
+    color: #546176;
+}
+
+.hero-profile-links a:hover { color: var(--color-accent-blue); }
+.hero-profile-links a:focus-visible { outline: 2px solid var(--color-accent-blue); outline-offset: 5px; border-radius: 3px; }
+.hero-pdf-label { font: .6rem var(--font-mono); color: #718096; }
+
 .btn {
     display: inline-block;
     padding: 0.7rem 1.6rem;

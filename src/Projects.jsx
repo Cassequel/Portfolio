@@ -7,15 +7,6 @@ import './CSS/Projects.css';
 
 const PROJECTS = [
     {
-        title: 'Lincoln Laboratory VNAT Network Traffic Classifier',
-        description: 'Built an end-to-end ML pipeline to classify encrypted VPN traffic using MIT Lincoln Laboratory\'s VNAT dataset — no payload inspection, metadata only. Trained LightGBM/Random Forest/LR across two tasks (5-class traffic category F1: 0.865, VPN detection F1: 1.000), and implemented physically-constrained adversarial evasion attacks to stress-test and harden the classifier.',
-        images: ['./images/vnat-front.png', './images/vnat-data.png'],
-        tags: ['Python', 'LightGBM', 'scikit-learn', 'SHAP', 'PyWavelets', 'Adversarial ML', 'Streamlit'],
-        github: 'https://github.com/Cassequel/Lincoln-Lab-VNAT-Classification',
-        demo: null,
-        website: 'https://rpsnsztwgfexzyy8y5utng.streamlit.app/#category-confidence-scores',
-    },
-    {
         title: 'Pag-asa Portal — Nonprofit ML Pipelines',
         description: 'Built and deployed four end-to-end machine learning pipelines for a nonprofit platform serving trafficking and abuse survivors in the Philippines. Pipelines include donor churn classification, resident reintegration readiness classification, a social media causal/explanatory model, and a safehouse operational outcomes panel regression with fixed effects.',
         images: ['./images/pagasa-landing.png', './images/pagasa-overview.png', './images/pagasa-ml.png'],
@@ -71,6 +62,15 @@ const PROJECTS = [
     },
 
     {
+        title: 'Proxmox Homelab & Self-Hosted Services',
+        description: 'Repurposed a Dell OptiPlex into a Proxmox VE homelab with LXC containers and a Home Assistant VM. Hosted Docker services with Portainer, Pi-hole DNS filtering, and custom media and budgeting apps backed by PostgreSQL. Configured Cloudflare Tunnel for remote app access and connected an ESP32 vibration sensor to Home Assistant webhooks for laundry notifications.',
+        images: [],
+        tags: ['Proxmox VE', 'Linux', 'LXC', 'Docker', 'Portainer', 'Cloudflare Tunnel', 'Home Assistant'],
+        github: 'https://github.com/Cassequel/Homelab',
+        demo: null,
+        website: null,
+    },
+    {
         title: 'Raspberry Pi Smart-Mirror',
         description: 'Customizable smart mirror built on Raspberry Pi, displaying weather, current Spotify, personal calendar events, and a voice assistant. Built with Python and an HTML frontend.',
         images: [],
@@ -79,15 +79,7 @@ const PROJECTS = [
         demo: null,
         website: null,
     },
-    {
-        title: 'FUTURE: Outdoor Climbing Send Scoring Algorithm',
-        description: 'For ClimbArete, a startup competitive outdoor climbing app, I am developing a machine learning algorithm to score climbers\' sends (successful climbs) based on various factors like route difficulty, climber performance, and environmental conditions.',
-        images: ['/images/arete.png'],
-        tags: ['Python', 'scikit-learn', 'Pandas'],
-        github: null,
-        demo: null,
-        website: null,
-    },
+
 ];
 
 function ImageCarousel({ images }) {
