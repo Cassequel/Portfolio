@@ -88,6 +88,15 @@ const PROJECTS = [
     },
 
     {
+        title: 'Proxmox Homelab & Self-Hosted Services',
+        description: 'Repurposed a Dell OptiPlex into a Proxmox VE homelab with LXC containers and a Home Assistant VM. Hosted Docker services with Portainer, Pi-hole DNS filtering, and custom media and budgeting apps backed by PostgreSQL. Configured Cloudflare Tunnel for remote app access and connected an ESP32 vibration sensor to Home Assistant webhooks for laundry notifications.',
+        images: [],
+        tags: ['Proxmox VE', 'Linux', 'LXC', 'Docker', 'Portainer', 'Cloudflare Tunnel', 'Home Assistant'],
+        github: 'https://github.com/Cassequel/Homelab',
+        demo: null,
+        website: null,
+    },
+    {
         title: 'Raspberry Pi Smart-Mirror',
         description: 'Customizable smart mirror built on Raspberry Pi, displaying weather, current Spotify, personal calendar events, and a voice assistant. Built with Python and an HTML frontend.',
         images: [],
@@ -96,15 +105,7 @@ const PROJECTS = [
         demo: null,
         website: null,
     },
-    {
-        title: 'FUTURE: Outdoor Climbing Send Scoring Algorithm',
-        description: 'For ClimbArete, a startup competitive outdoor climbing app, I am developing a machine learning algorithm to score climbers\' sends (successful climbs) based on various factors like route difficulty, climber performance, and environmental conditions.',
-        images: ['/images/arete.png'],
-        tags: ['Python', 'scikit-learn', 'Pandas'],
-        github: null,
-        demo: null,
-        website: null,
-    },
+
 ];
 
 function ImageCarousel({ images }) {

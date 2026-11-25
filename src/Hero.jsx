@@ -1,5 +1,8 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import './CSS/Hero.css';
 
 const TERMINAL_LINES = [
@@ -70,7 +73,18 @@ function Hero() {
                 </p>
                 <div className="hero-ctas">
                     <a href="#projects" className="btn btn--primary">View Projects</a>
-                    <a href="#footer" className="btn btn--ghost">Get in Touch</a>
+                    <a href="#experience" className="btn btn--ghost">Experience</a>
+                </div>
+                <div className="hero-profile-links">
+                    <a href="https://github.com/Cassequel" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} /> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/aiden-swanson" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                    </a>
+                    <a href="/documents/Aiden_Swanson_AI_Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume PDF (opens in a new tab)">
+                        <FontAwesomeIcon icon={faFilePdf} /> Resume <span className="hero-pdf-label">PDF ↗</span>
+                    </a>
                 </div>
             </div>
 

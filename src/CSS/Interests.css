@@ -1,0 +1,12 @@
+.interests-section { padding: var(--section-pad); background: #f7f9fc; scroll-margin-top: 80px; }
+.interests-inner { max-width: var(--max-width); margin: 0 auto; }
+.interests-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem; }
+.interests-grid h3 { font-family: var(--font-display); font-size: 1.2rem; margin-bottom: .75rem; }
+.interests-language-list { margin: 0; }
+.interests-language-list > div { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; min-height: 54px; padding: .85rem 0; border-bottom: 1px solid #dde4ee; }
+.interests-language-list dt { font-weight: 500; }
+.interests-language-list dd { font: .75rem var(--font-mono); color: #466497; }
+.interests-list { list-style: disc; padding-left: 1.25rem; }
+.interests-list li { min-height: 54px; padding: .85rem 0; border-bottom: 1px solid #dde4ee; }
+.interests-list li::marker { color: var(--color-accent-blue); }
+@media (max-width: 640px) { .interests-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
