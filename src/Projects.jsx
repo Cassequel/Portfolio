@@ -7,6 +7,23 @@ import './CSS/Projects.css';
 
 const PROJECTS = [
     {
+        title: 'Dieter-Bot — Fine-Tuned Language Model',
+        description: 'Fine-tuned Qwen2.5-1.5B-Instruct with Unsloth, LoRA, and QLoRA on a class-created dataset of Dieter F. Uchtdorf general conference quotes. Each of the 156 examples pairs a potential question with a direct quote as the target response, using the same instruction throughout.',
+        contribution: 'Contributed to the shared training dataset and used it to fine-tune the model, then exported a quantized GGUF model for local inference.',
+        images: [],
+        techStack: [
+            'Python · PyTorch',
+            'Qwen2.5-1.5B-Instruct · Unsloth',
+            'LoRA · QLoRA (4-bit fine-tuning)',
+            'Hugging Face Transformers · TRL',
+            'Google Colab · JSONL training data',
+            'GGUF · Ollama',
+        ],
+        github: null,
+        demo: 'https://huggingface.co/spaces/Cassequel/Dieter-Bot',
+        website: null,
+    },
+    {
         title: 'Lincoln Laboratory VNAT Network Traffic Classifier',
         description: 'Built an end-to-end ML pipeline to classify encrypted VPN traffic using MIT Lincoln Laboratory\'s VNAT dataset — no payload inspection, metadata only. Trained LightGBM/Random Forest/LR across two tasks (5-class traffic category F1: 0.865, VPN detection F1: 1.000), and implemented physically-constrained adversarial evasion attacks to stress-test and harden the classifier.',
         images: ['./images/vnat-front.png', './images/vnat-data.png'],
@@ -127,7 +144,7 @@ function ImageCarousel({ images }) {
     );
 }
 
-function Projects() {
+export function ProjectSection({ id, title, label, projects }) {
     const cardRefs = useRef([]);
 
     useEffect(() => {
@@ -167,13 +184,13 @@ function Projects() {
     }, []);
 
     return (
-        <section id="projects">
+        <section id={id} className="project-section" aria-labelledby={`${id}-title`}>
             <div className="projects-inner">
-                <p className="section-label">// work</p>
-                <h2 className="section-title">Projects</h2>
+                <p className="section-label">// {label}</p>
+                <h2 id={`${id}-title`} className="section-title">{title}</h2>
 
                 <div className="projects-grid">
-                    {PROJECTS.map((project, i) => (
+                    {projects.map((project, i) => (
                         <article
                             key={project.title}
                             className="project-card"
@@ -181,15 +198,30 @@ function Projects() {
                         >
                             <h3 className="project-title">{project.title}</h3>
 
+                            {project.context && <p className="project-context">{project.context}</p>}
+
                             <ImageCarousel images={project.images} />
 
                             <p className="project-description">{project.description}</p>
 
-                            <div className="project-tags">
+                            {project.contribution && (
+                                <p className="project-contribution"><strong>My contribution:</strong> {project.contribution}</p>
+                            )}
+
+                            {project.techStack && (
+                                <div className="project-stack">
+                                    <h4>Tech stack</h4>
+                                    <ul>
+                                        {project.techStack.map(tech => <li key={tech}>{tech}</li>)}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {project.tags && <div className="project-tags">
                                 {project.tags.map(tag => (
                                     <span key={tag} className="project-tag">{tag}</span>
                                 ))}
-                            </div>
+                            </div>}
 
                             <div className="project-links">
                                 {project.github && (
@@ -229,6 +261,10 @@ function Projects() {
             </div>
         </section>
     );
+}
+
+function Projects() {
+    return <ProjectSection id="projects" title="Projects" label="work" projects={PROJECTS} />;
 }
 
 export default Projects;

@@ -1,7 +1,37 @@
-#projects {
+.project-section {
     background-color: var(--color-surface);
     padding: var(--section-pad);
     scroll-margin-top: 80px;
+}
+
+#hackathons .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-context {
+    color: #1d4ed8;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.project-contribution,
+.project-stack {
+    font-size: 0.85rem;
+    line-height: 1.65;
+}
+
+.project-stack h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+}
+
+.project-stack ul {
+    padding-left: 1.2rem;
+}
+
+.project-stack li + li {
+    margin-top: 0.2rem;
 }
 
 .projects-inner {
@@ -202,7 +232,8 @@
 }
 
 @media (max-width: 600px) {
-    .projects-grid {
+    .projects-grid,
+    #hackathons .projects-grid {
         grid-template-columns: 1fr;
     }
 }
