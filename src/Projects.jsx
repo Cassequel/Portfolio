@@ -7,7 +7,6 @@ import './CSS/Projects.css';
 
 const PROJECTS = [
     {
-<<<<<<< HEAD
         title: 'Dieter-Bot — Fine-Tuned Language Model',
         description: 'Fine-tuned Qwen2.5-1.5B-Instruct with Unsloth, LoRA, and QLoRA on a class-created dataset of Dieter F. Uchtdorf general conference quotes. Each of the 156 examples pairs a potential question with a direct quote as the target response, using the same instruction throughout.',
         contribution: 'Contributed to the shared training dataset and used it to fine-tune the model, then exported a quantized GGUF model for local inference.',
@@ -34,8 +33,6 @@ const PROJECTS = [
         website: 'https://rpsnsztwgfexzyy8y5utng.streamlit.app/#category-confidence-scores',
     },
     {
-=======
->>>>>>> f423e69ee72d57bd9497c4fd9066aedff36f0126
         title: 'Pag-asa Portal — Nonprofit ML Pipelines',
         description: 'Built and deployed four end-to-end machine learning pipelines for a nonprofit platform serving trafficking and abuse survivors in the Philippines. Pipelines include donor churn classification, resident reintegration readiness classification, a social media causal/explanatory model, and a safehouse operational outcomes panel regression with fixed effects.',
         images: ['./images/pagasa-landing.png', './images/pagasa-overview.png', './images/pagasa-ml.png'],
